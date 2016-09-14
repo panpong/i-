@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "b443abe8-e83d-0410-8ac9-d473ca6f4c42++1077",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "b443abe8-e83d-0410-8ac9-d473ca6f4c42++1077" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "b443abe8-e83d-0410-8ac9-d473ca6f4c42++1077" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A0664984-CA8A-4ACB-823C-918DEB84D688",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "b443abe8-e83d-0410-8ac9-d473ca6f4c42++1077" : "%E9%97%AA%E6%9C%8D%E7%94%A8%E6%88%B7V1.0.0\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "flashServesCustomer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "flashServesCustomer.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn+ssh:\/\/192.168.1.99\/gb",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "b443abe8-e83d-0410-8ac9-d473ca6f4c42++1077"
+    }
+  ]
+}

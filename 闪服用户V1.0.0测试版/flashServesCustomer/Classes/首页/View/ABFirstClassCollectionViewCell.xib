@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ABFirstClassServesCollectionViewCellREUSEID" id="zD8-au-X3P" customClass="ABFirstClassCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="242" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="242" height="113"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="首页-电脑支持" translatesAutoresizingMaskIntoConstraints="NO" id="rVz-6M-cnn">
+                        <rect key="frame" x="94" y="12" width="55" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="oSc-Jp-rpr"/>
+                            <constraint firstAttribute="height" constant="55" id="xf6-2m-8BS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电脑支持" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKZ-h3-k7f">
+                        <rect key="frame" x="91" y="77" width="60" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="XKZ-h3-k7f" firstAttribute="centerX" secondItem="zD8-au-X3P" secondAttribute="centerX" id="2ba-v7-T4x"/>
+                <constraint firstItem="rVz-6M-cnn" firstAttribute="centerX" secondItem="zD8-au-X3P" secondAttribute="centerX" id="Fc2-DN-jhh"/>
+                <constraint firstItem="XKZ-h3-k7f" firstAttribute="top" secondItem="rVz-6M-cnn" secondAttribute="bottom" constant="10" id="aB5-ub-tPZ"/>
+                <constraint firstItem="rVz-6M-cnn" firstAttribute="top" secondItem="zD8-au-X3P" secondAttribute="top" constant="12" id="xFi-bN-ngV"/>
+            </constraints>
+            <size key="customSize" width="242" height="143"/>
+            <connections>
+                <outlet property="descLabel" destination="XKZ-h3-k7f" id="B4p-1e-gcY"/>
+                <outlet property="iconImageView" destination="rVz-6M-cnn" id="7g5-X9-rSK"/>
+            </connections>
+            <point key="canvasLocation" x="285" y="230.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="首页-电脑支持" width="55" height="55"/>
+    </resources>
+</document>

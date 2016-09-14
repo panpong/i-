@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ABFirstClassSubclassCollectionViewCellREUSEID" reuseIdentifier="" id="gTV-IL-0wX" customClass="ABFirstClassSubclassCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="97" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="97" height="60"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpE-1O-OIj">
+                        <rect key="frame" x="15" y="8" width="67" height="18"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3q-Hn-qdp">
+                        <rect key="frame" x="15" y="34" width="67" height="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.44705882352941173" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="hpE-1O-OIj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="Cqa-xa-9WQ"/>
+                <constraint firstItem="n3q-Hn-qdp" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Dbh-qm-hLl"/>
+                <constraint firstItem="hpE-1O-OIj" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="R1k-EC-gAb"/>
+                <constraint firstAttribute="trailing" secondItem="hpE-1O-OIj" secondAttribute="trailing" constant="15" id="bGa-5h-NTU"/>
+                <constraint firstItem="n3q-Hn-qdp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="clA-vj-Ok2"/>
+                <constraint firstItem="n3q-Hn-qdp" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="12" id="hPM-nT-y8b"/>
+                <constraint firstItem="hpE-1O-OIj" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-13" id="kKG-7r-QkE"/>
+                <constraint firstAttribute="trailing" secondItem="n3q-Hn-qdp" secondAttribute="trailing" constant="15" id="sqn-KB-g87"/>
+            </constraints>
+            <size key="customSize" width="97" height="126"/>
+            <connections>
+                <outlet property="nameLabel" destination="hpE-1O-OIj" id="r4d-Kc-gsb"/>
+                <outlet property="priceLabel" destination="n3q-Hn-qdp" id="ive-XJ-BNS"/>
+            </connections>
+            <point key="canvasLocation" x="326.5" y="265"/>
+        </collectionViewCell>
+    </objects>
+</document>

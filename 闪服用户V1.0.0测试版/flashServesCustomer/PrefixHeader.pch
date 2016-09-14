@@ -1,0 +1,118 @@
+//
+//  PrefixHeader.pch
+//  flashServes
+//
+//  Created by 002 on 16/3/11.
+//  Copyright © 2016年 002. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifndef __OBJC__
+//#import <UIKit/UIKit.h>
+//#import <Foundation/Foundation.h>
+
+#endif
+
+
+#ifndef __OPTIMIZE__
+
+//# define ABLog(format,...) NSLog(format,##__VA_ARGS__)
+
+# define ABLog(fmt,...)   NSLog((@"\n[文件名:%s]\n""[函数名:%s]\n""[行号:%d] \n [类名：%@] " fmt), __FILE__, __FUNCTION__, __LINE__, NSStringFromClass([self class]),##__VA_ARGS__)
+
+#else
+
+# define ABLog(format,...) {}
+
+#endif
+
+#define iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iOS9 [[UIDevice currentDevice].systemVersion floatValue]>=9.0 ? YES:NO
+
+#define iOS8 [[UIDevice currentDevice].systemVersion floatValue]>=8.0 ? YES:NO
+
+#define iOS7 [[UIDevice currentDevice].systemVersion floatValue]>=7.0 ? YES:NO
+
+#define iOS6 [[UIDevice currentDevice].systemVersion floatValue]>=6.0 ? YES:NO
+
+#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define ScreenWidth ([[UIScreen mainScreen] bounds].size.width)
+#define ScreenBounds [UIScreen mainScreen].bounds
+
+
+#define CPRandomColor CPColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+
+#define __weakSelf  __weak typeof(self) weakSelf = self
+#define weakSelf weakSelf
+// 颜色
+#define CPColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define KBlackColor CPColor(0,0,0)
+#define KWhiteColor CPColor(255,255,255)
+#define KDisableColor CPColor(165, 227, 255)
+#define KGrayGroundColor CPColor(246,246,246)
+
+// 备注类的或者标题
+#define kColorTextGrey  CPColor(132, 132, 132)
+#define KColorTextBlack CPColor(0, 0, 0)
+#define KColorTextPlaceHold CPColor(160, 160, 160)
+#define KColorBlue CPColor(0, 160, 233)
+#define KColorLine CPColor(239, 239, 239)
+#define KColorSep CPColor(204, 204, 204)
+#define kColorOrange CPColor(255, 114, 0)
+#define kColorBackground CPColor(246, 246, 246)
+#define KMoneyColor CPColor(255, 72, 0)
+
+
+#define Margin   12
+#define ProgressLabelFontSize 15
+#define PADDING_28PX 14
+#define PADDING_30PX 15
+#define PADDING_32PX 16
+#define HEIGHT_LOGIN_AND_RIGISTER_BUTTON_IPHONE6 50 // iPhone6和PLUS下注册、登录、下一步按钮的高度
+#define HEIGHT_LOGIN_AND_RIGISTER_BUTTON_IPHONE5 40 // iPhone4和iPhone5下注册、登录、下一步按钮的高度
+#define FONT_SIZE_BASCICBUTTON 19   // 基本按钮的文字大小 比如 ‘登录’‘注册’‘下一步’ ‘确定’等按钮文字大小
+#define SIZE_HEIGHT_TEXTFILED 50   // 登录、注册、找回密码‘文本输入框’的高度
+#define SIZE_HEIGHT_TABLEVIEW_ROW 45   // 一般情况下tableview列表的高度
+#define SIZE_HEIGHT_NAVIGATIONBAR 64   // 导航栏的高度
+#define SIZE_HEIGHT_TABBAR 49   // 导航栏的高度
+
+
+#define SERVICE_PHONE_NUM @"400-9633-006"   // 客服服务电话
+#define CHANG_JIAN_WEN_TI @"http://123.57.16.138:8532/files/userFAQ.html"
+#define YONG_HU_FU_WU_XIE_YI @"http://123.57.16.138:8532/files/userAgreement.html"
+#define FU_WU_XV_ZHI @"http://123.57.16.138:8532/files/userServiceNotice.html"
+
+#define toiPhone5Vaule(value) value / 4 * 3
+
+#define KCPTestDate 0
+
+// 检查Session是否过期
+#define isSessionExpirated(dic) [[dic objectForKey:errcode] integerValue] == 40002
+
+
+// 切换根视图控制器通知
+#define ABSwitchRootViewControllerNotification @"ABSwitchRootViewControllerNotification"
+#define NOTIFICATION_POPTOTHEVIEWCONTROLLER @"NOTIFICATION_POPTOTHEVIEWCONTROLLER"    // 注册后的自动登录通知
+#define NOTIFICATION_CHOOSEDCITY @"choosedCity" // 所选城市
+#define USERDEFAULTKEY_SERVICECITIES  @"USERDEFAULTKEY_SERVICECITIES"  // 服务城市
+#define NOTIFICATION_ISSHOWHISTORYLABEL @"isShowHistoryLabel"   // 是否显示历史记录标签
+#define NOTIFICATION_LOGINSUCCESS @"NOTIFICATION_LOGINSUCCESS"   // 登录成功通知
+#define NOTIFICATION_RELOADHOMEVIEW @"NOTIFICATION_RELOADHOMEVIEW"   // 刷新首页通知
+#define NOTIFICATION_LOGINOUT @"NOTIFICATION_LOGINOUT"   // 注销通知
+
+#define ABLogFunction  ABLog(@"function%s",__FUNCTION__)
+
+#endif /* PrefixHeader_pch */

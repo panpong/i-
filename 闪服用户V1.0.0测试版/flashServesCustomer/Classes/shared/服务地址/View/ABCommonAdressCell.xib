@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCellWithIdentifier" id="nbw-2w-YCn" customClass="ABCommonAdressCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nbw-2w-YCn" id="GlB-9N-zEh">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欧陆经典" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Kl-Re-jBl">
+                        <rect key="frame" x="13" y="5" width="299" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="LrF-vD-abd"/>
+                            <constraint firstAttribute="height" constant="21" id="U3X-01-s16"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LrF-vD-abd"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京朝阳区北苑路170号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8z-HV-RK2">
+                        <rect key="frame" x="13" y="30" width="299" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.51764705882352935" green="0.51764705882352935" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="i8z-HV-RK2" secondAttribute="trailing" id="5pz-0A-nOa"/>
+                    <constraint firstItem="0Kl-Re-jBl" firstAttribute="leading" secondItem="GlB-9N-zEh" secondAttribute="leadingMargin" constant="5" id="71Z-t4-cU4"/>
+                    <constraint firstItem="0Kl-Re-jBl" firstAttribute="top" secondItem="GlB-9N-zEh" secondAttribute="topMargin" constant="-3" id="BgS-fv-knP"/>
+                    <constraint firstItem="i8z-HV-RK2" firstAttribute="top" secondItem="GlB-9N-zEh" secondAttribute="top" constant="23" id="Uv9-nQ-c1n"/>
+                    <constraint firstItem="i8z-HV-RK2" firstAttribute="leading" secondItem="GlB-9N-zEh" secondAttribute="leading" constant="30" id="Wfq-HI-V0X"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0Kl-Re-jBl" secondAttribute="trailing" id="gpc-yH-x95"/>
+                    <constraint firstItem="i8z-HV-RK2" firstAttribute="leading" secondItem="GlB-9N-zEh" secondAttribute="leadingMargin" constant="5" id="s1x-6n-Iuf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="i8z-HV-RK2" secondAttribute="trailing" id="xoe-Bh-CI6"/>
+                    <constraint firstItem="i8z-HV-RK2" firstAttribute="top" secondItem="0Kl-Re-jBl" secondAttribute="bottom" constant="4" id="yS3-PY-EIQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0Kl-Re-jBl" secondAttribute="trailing" id="zcw-2X-czJ"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="zcw-2X-czJ"/>
+                        <exclude reference="Uv9-nQ-c1n"/>
+                        <exclude reference="Wfq-HI-V0X"/>
+                        <exclude reference="xoe-Bh-CI6"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="adressLabel" destination="i8z-HV-RK2" id="NYE-lO-uXG"/>
+                <outlet property="nameLabel" destination="0Kl-Re-jBl" id="PcP-ms-6i5"/>
+            </connections>
+            <point key="canvasLocation" x="307" y="200.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DebugLevel</key>
+	<integer>2</integer>
+	<key>Version</key>
+	<string>1.0.1</string>
+	<key>VersionId</key>
+	<string>1</string>
+	<key>Source</key>
+	<string>1</string>
+	<key>PName</key>
+	<string>customer</string>
+	<key>ProductID</key>
+	<string>2</string>
+	<key>Description</key>
+	<string>爱导游app</string>
+	<key>PlatForm</key>
+	<string>ios</string>
+	<key>Custom</key>
+	<string>aibang</string>
+	<key>CType</key>
+	<string>json</string>
+	<key>SearchCity</key>
+	<string>郑州</string>
+	<key>CID</key>
+	<string>becc5ea6528fb6822e7187234b805e26</string>
+</dict>
+</plist>
